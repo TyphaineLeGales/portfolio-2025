@@ -13,10 +13,12 @@ export default defineNuxtConfig({
   components: [
     { path: '~/components', pathPrefix: false, global: true },
   ],
+  css: ['~/assets/css/main.css'],
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
     'nuxt-viewport',
+    '@nuxtjs/i18n'
   ],
   viewport: {
     breakpoints: {

@@ -1,0 +1,6 @@
+@import "./tailwind.css";
+@import "./base";
+
+body {
+  @apply overflow-x-hidden w-screen;
+}
