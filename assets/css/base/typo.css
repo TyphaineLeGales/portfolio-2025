@@ -1,0 +1,45 @@
+@layer base {
+  * {
+    @apply font-pp-medium text-black-full;
+  }
+
+  h1 {
+    @apply font-pp-black text-black-full text-64 uppercase;
+
+  }
+  
+  h2, h3, h4, h5, h6 {
+    @apply font-pp-bold uppercase
+  }
+  
+  h2 {
+    @apply text-24 leading-24;
+
+    @screen lg {
+      @apply text-36 leading-36;
+    }
+  }
+
+  h3 {
+    @apply text-20 leading-20 uppercase;
+
+    @screen lg {
+      @apply text-18 leading-18;
+    }
+  }
+  
+  strong {
+    @apply font-pp-bold;
+  }
+
+  p, span, li, a {
+    @apply text-16;
+  }
+
+  div > a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+}

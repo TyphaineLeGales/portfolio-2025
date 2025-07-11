@@ -28,9 +28,6 @@ export default {
     //   pattern: 'url(\'/backgrounds/pattern.webp\')',
     // },
     fontFamily: {
-    //   'suisse-black': ['suisse-black'],
-    //   'suisse-bold': ['suisse-bold'],
-    //   'suisse-medium': ['suisse-medium'],
     'pp-black': ['PPFormula-black'],
     'pp-bold': ['PPFormula-bold'],
     'pp-medium': ['PPFormula-medium'],
