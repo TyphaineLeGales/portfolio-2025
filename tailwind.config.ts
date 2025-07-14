@@ -2,6 +2,14 @@ import { pxToRem } from './utils/rem'
 
 export default {
   darkMode: 'class',
+  safelist: [
+    'bg-green',
+    'bg-red',
+    'bg-blue',
+    'bg-yellow',
+    'bg-pink',
+    'bg-orange'
+  ],
   content: [
     `./components/**/*.{vue,js,ts}`,
     `./layouts/**/*.vue`,
@@ -37,20 +45,14 @@ export default {
       black: {
         full: '#121223',
       },
-      grey: {
-        light: '#F1F3FD',
-      },
-      white: {
-        full: '#FFFFFF',
-      },
-      blue: {
-        dark: '#121223',
-        electric: '#1D4EFF',
-        light: '#CDD2E7',
-      },
-      yellow: '#FEF783',
-      orange: '#E75020',
+      pink: '#FFB3F4',
+      red:'#FD4F02',
+      blue: '#677DDF',
+      yellow: '#FDDF56',
+      green: '#55945A',
+      orange: '#FD8F09',
       transparent: 'transparent',
+      white: '#FFFFFF'
     },
     fontSize: {
       8: pxToRem(8),

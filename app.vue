@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <MenuItems/>
-  </div>
+  <NuxtPage
+    :transition="{ mode: 'out-in' }"
+  />
 </template>

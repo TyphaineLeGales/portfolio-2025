@@ -18,7 +18,7 @@ const props = defineProps({
 <template>
   <component
     :is="tag"
-    class="mx-auto grid w-full grid-cols-6 gap-x-32px px-16px md:px-24px 2xl:grid-cols-16 2xl:max-w-screen-2xl 2xl:px-32px"
+    class="mx-auto grid w-full grid-rows-1 gap-y-[12px] grid-cols-6 gap-x-32px px-16px md:px-24px 2xl:grid-cols-16 2xl:max-w-screen-2xl 2xl:px-32px"
   >
     <slot />
   </component>

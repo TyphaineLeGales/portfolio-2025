@@ -1,0 +1,30 @@
+.animated-link {
+  overflow: hidden;
+}
+
+.animated-link {
+  overflow: hidden;
+}
+
+.animated-link > h2 {
+  position: relative;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+.animated-link>  h2::before {
+  position: absolute;
+  top: 200%;
+  content: attr(data-hover);
+  transform: translate3d(0, 0, 0);
+  font-family: 'PPFormula-extended';
+  white-space: nowrap;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .animated-link:hover h2 {
+    transform: translateY(-200%);
+  }
+}

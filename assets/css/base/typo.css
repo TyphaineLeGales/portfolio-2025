@@ -13,18 +13,18 @@
   }
   
   h2 {
-    @apply text-24 leading-24;
+    @apply text-24;
 
     @screen lg {
-      @apply text-36 leading-36;
+      @apply text-30;
     }
   }
 
   h3 {
-    @apply text-20 leading-20 uppercase;
+    @apply text-20 uppercase;
 
     @screen lg {
-      @apply text-18 leading-18;
+      @apply text-18;
     }
   }
   
