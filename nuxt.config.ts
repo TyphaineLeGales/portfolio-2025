@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'fr' },
     },
   },
+   ssr: false,
   components: [
     { path: '~/components', pathPrefix: false, global: true },
   ],
@@ -18,7 +19,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
     'nuxt-viewport',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxt/image'
   ],
   viewport: {
     breakpoints: {

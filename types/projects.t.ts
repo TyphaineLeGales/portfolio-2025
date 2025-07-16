@@ -3,5 +3,6 @@ declare global {
         color: string
         id: number
         title: string
+        img: string
     }
 }

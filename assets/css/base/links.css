@@ -6,25 +6,58 @@
   overflow: hidden;
 }
 
-.animated-link > h2 {
+.animated-link h2 {
   position: relative;
   display: inline-block;
   transition: 0.4s;
+  z-index:20;
 }
 
-.animated-link>  h2::before {
+.animated-link div {
+  position: relative;
+  display: inline-block;
+  transition: 0.45s;
+}
+
+
+
+.animated-link h2::before {
   position: absolute;
   top: 200%;
   content: attr(data-hover);
   transform: translate3d(0, 0, 0);
   font-family: 'PPFormula-extended';
   white-space: nowrap;
+  width: 100%;
+  
 }
 
+.arrow-container {
+  overflow: hidden;
+}
+
+.arrow-svg {
+  position: absolute;
+  top: -250%;
+  transform-origin: right top;
+  transform:  scale(220%);
+  transition: transform 0.45s ease;
+}
 
 
 @media screen and (min-width: 1024px) {
   .animated-link:hover h2 {
-    transform: translateY(-200%);
+    transform: translateY(-170%) ;
   }
+
+  .animated-link:hover div {
+    transform: translateY(180%);
+  }
+
+
+  .animated-link:hover .arrow-svg {
+    transform: translateY(20%) scale(220%);
+  }
+
+
 }

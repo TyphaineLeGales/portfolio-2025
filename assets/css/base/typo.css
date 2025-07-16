@@ -4,7 +4,7 @@
   }
 
   h1 {
-    @apply font-pp-black text-black-full text-64 uppercase;
+    @apply font-pp-black text-black-full text-70 uppercase;
 
   }
   
@@ -16,7 +16,7 @@
     @apply text-24;
 
     @screen lg {
-      @apply text-30;
+      @apply text-40;
     }
   }
 
