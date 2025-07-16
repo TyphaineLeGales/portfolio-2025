@@ -2,6 +2,12 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import GlslCanvas from 'glslCanvas'
 
+/* TODO - 
+
+- scale shader mobile 
+- avoid accumulation over time
+*/
+
 const canvasRef = ref(null)
 let sandbox = null
 
@@ -26,6 +32,7 @@ onMounted(() => {
 
 </script>
 <template>
+  <LanguageSwitch/>
   <NuxtPage
     :transition="{ mode: 'out-in' }"
   />

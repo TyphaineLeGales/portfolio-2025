@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'fr' },
     },
   },
-   ssr: false,
+  ssr: false,
   components: [
     { path: '~/components', pathPrefix: false, global: true },
   ],
@@ -22,6 +22,14 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image'
   ],
+  i18n: {
+    defaultLocale: 'fr',
+    locales: [
+      { code: 'en', name: 'EN', file: 'en.json' },
+      { code: 'fr', name: 'FR', file: 'fr.json' }
+    ]
+  },
+  
   viewport: {
     breakpoints: {
       'xs': 320,
